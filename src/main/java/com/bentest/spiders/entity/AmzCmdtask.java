@@ -46,6 +46,14 @@ public class AmzCmdtask implements Serializable {
 		this.createTime = new Date();
 		this.updateTime = new Date();
 	}
+	
+	public AmzCmdtask(Integer cmdStatus, Integer cmdType, String cmdText) {
+		this.cmdStatus = cmdStatus;
+		this.cmdType = cmdType;
+		this.cmdText = cmdText;
+		this.createTime = new Date();
+		this.updateTime = new Date();
+	}
 
 	public Integer getId() {
 		return id;
