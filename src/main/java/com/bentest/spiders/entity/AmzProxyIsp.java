@@ -14,9 +14,9 @@ import javax.persistence.Table;
  * 
  */
 @Entity
-@Table(name="amz_proxy")
-@NamedQuery(name="AmzProxy.findAll", query="SELECT a FROM AmzProxy a")
-public class AmzProxy implements Serializable {
+@Table(name="amz_proxy_isp")
+@NamedQuery(name="AmzProxyIsp.findAll", query="SELECT a FROM AmzProxyIsp a")
+public class AmzProxyIsp implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
@@ -29,7 +29,7 @@ public class AmzProxy implements Serializable {
 	private String getUrl;
 
 
-	public AmzProxy() {
+	public AmzProxyIsp() {
 	}
 
 
