@@ -24,9 +24,47 @@ public class AmzUA implements Serializable {
 
 	@Column(name="UA")
 	private String ua;
+	
+	@Column(name="BROWSER_TYPE")
+	private String browserType;
+	
+	@Column(name="BROWSER_VERSION")
+	private String browserVersion;
+	
+	@Column(name="BROWSER_NAME")
+	private String browserName;
 
 
 	public AmzUA() {
+	}
+
+	public String getBrowserType() {
+		return browserType;
+	}
+
+
+	public void setBrowserType(String browserType) {
+		this.browserType = browserType;
+	}
+
+
+	public String getBrowserVersion() {
+		return browserVersion;
+	}
+
+
+	public void setBrowserVersion(String browserVersion) {
+		this.browserVersion = browserVersion;
+	}
+
+
+	public String getBrowserName() {
+		return browserName;
+	}
+
+
+	public void setBrowserName(String browserName) {
+		this.browserName = browserName;
 	}
 
 
