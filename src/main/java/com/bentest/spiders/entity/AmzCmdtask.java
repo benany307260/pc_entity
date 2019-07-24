@@ -25,8 +25,8 @@ public class AmzCmdtask implements Serializable {
 	@Column(name="CMD_TEXT")
 	private String cmdText;
 
-	@Column(name="CMD_TYPE")
-	private Integer cmdType;
+	@Column(name="DEAL_COUNT")
+	private Integer dealCount = 0;
 
 	@Temporal(TemporalType.TIMESTAMP)
 	@Column(name="CREATE_TIME")
@@ -35,6 +35,9 @@ public class AmzCmdtask implements Serializable {
 	@Temporal(TemporalType.TIMESTAMP)
 	@Column(name="UPDATE_TIME")
 	private Date updateTime;
+	
+	@Column(name="CMD_TYPE")
+	private Integer cmdType;
 
 	public AmzCmdtask() {
 	}
@@ -53,6 +56,14 @@ public class AmzCmdtask implements Serializable {
 		this.cmdText = cmdText;
 		this.createTime = new Date();
 		this.updateTime = new Date();
+	}
+
+	public Integer getDealCount() {
+		return dealCount;
+	}
+
+	public void setDealCount(Integer dealCount) {
+		this.dealCount = dealCount;
 	}
 
 	public Integer getId() {
